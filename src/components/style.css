@@ -1,0 +1,64 @@
+header
+{
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.counter-area
+{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+textarea
+{
+    outline: none;
+    border: 1px solid black;
+    font-size: 1.35rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 7px;
+    resize: vertical;
+}
+
+button
+{
+    color: white;
+    padding: 0.6rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.clear
+{
+    background-color: #333333;
+}
+
+.disabled
+{
+    background-color: #c0baba;
+    cursor: not-allowed;
+}
+
+.count-group
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.character, .word {
+    background-color: rgb(9, 32, 110);
+}
