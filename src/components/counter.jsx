@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import './style.css'
 
 const Counter = () => {
 
@@ -38,18 +39,19 @@ const Counter = () => {
                 name="textholder-area"
                 rows="7"
                 cols="35"
+                data-testid = "textarea"
                 ref={textRef}
             />
             {
                 isClear ? (
-                    <button className="disabled">Clear</button>
+                    <button data-testid = "disabled-clear" className="disabled">Clear</button>
                 ) : (
-                    <button onClick={handleClear} className="clear">Clear</button>
+                    <button onClick={handleClear} className="clear" data-testid="clearBtn">Clear</button>
                 )
             }
             <div className="count-group">
-                <button className="character">Character Count: {charCount}</button>
-                <button className="word">Word Count: {wordCount}</button>
+                <button className="character" data-testid ="charCount">Character Count: {charCount}</button>
+                <button className="word" data-testid="wordCount">Word Count: {wordCount}</button>
             </div>
         </form>
 

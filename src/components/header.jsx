@@ -4,8 +4,8 @@ import './style.css'
 const Header = ({title, subtitle}) => {
   return (
     <header>
-        <h1>{title}</h1>
-        <span>{subtitle}</span>
+        <h1 data-testid = "heading">{title}</h1>
+        <span data-testid = "subheading">{subtitle}</span>
     </header>
   )
 }
